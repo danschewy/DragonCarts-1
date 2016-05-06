@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.kevin_asus.morecarts.MainActivity"
+    android:id="@+id/cartInfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_marginStart="0dp"
+    android:background="#FFF">
+
+    <ImageView
+        android:id="@+id/profileImg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/foodcart2"
+        android:scaleType="centerCrop"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileImg"
+        android:id="@+id/ratingBar"
+        android:layout_marginTop="22dp"
+        android:layout_centerHorizontal="true"
+        android:rating="5"
+        android:layout_marginBottom="7dp" />
+
+    <fragment
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/ratingBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.kevin_asus.morecarts.ReviewListFragment"
+        android:id="@+id/fragment"/>
+</RelativeLayout>

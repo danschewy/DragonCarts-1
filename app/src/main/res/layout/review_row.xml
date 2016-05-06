@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp">
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/def"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        
+        />
+    
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="Username"
+        android:layout_toEndOf="@+id/profilePic"
+        android:paddingTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MM/DD/YY"
+        android:textSize="12sp"
+        android:layout_alignBaseline="@+id/username"
+        android:layout_toEndOf="@+id/username"
+        android:paddingTop="8dp"/>
+
+    <RatingBar
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_toEndOf="@+id/profilePic"
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:rating="5" />
+    
+ <!--   <ImageView
+        android:id="@+id/reviewRating"
+        android:layout_width="80dp"
+        android:layout_height="19dp"
+        android:src="@drawable/stars"
+        android:layout_toEndOf="@+id/profilePic"
+        android:layout_below="@id/username"
+        android:layout_marginTop="3dp"/>
+        -->
+
+    <TextView
+        android:id="@+id/reviewBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/profilePic"
+        android:layout_below="@+id/ratingBar"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:text="Super good. I was in the mood for a kebab (or shawarma, gyro, whatever you prefer to call it), and I passed like two other carts before choosing this place. I'm so glad I found and chose this one. I got a chicken gyro for $4 and it was outstanding. The chicken (I actually think it was chicken tikka) was so well seasoned and the sauces were great. The salad was okay enough; typical lettuce-tomato-onion mix.
+
+Cheap, fast, and delish. I really recommend this place! I'll be sure to come back."
+        android:maxLines="5"
+        android:ellipsize="end"
+        />
+
+</RelativeLayout>
